@@ -93,7 +93,7 @@ case $input in
 	4)
 		echo "Look at your phone."
 		echo "Wait until you see a message saying 'Backup complete' or your phone returns to the home screen."
-		${AdbCmd} backup -apk -noshared - nosystem -f $BackupDir/${BackupFileName}
+		${AdbCmd} backup -apk -noshared -nosystem -f $BackupDir/${BackupFileName}
 		ExitCode=$?
 		;;
 	5)
